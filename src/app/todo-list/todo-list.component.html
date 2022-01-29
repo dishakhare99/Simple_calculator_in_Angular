@@ -1,0 +1,12 @@
+<div class="main">
+    <h1>My To Do List</h1>
+    <h2>What would you like to do today?</h2>
+  
+    <ul>
+      <li *ngFor="let item of items; let index = index">{{item.title}} {{item.date}}<button  style="margin:10px;" (click)="removeItem(index)">Remove</button></li>
+     
+    </ul>
+    
+  
+  
+</div>
